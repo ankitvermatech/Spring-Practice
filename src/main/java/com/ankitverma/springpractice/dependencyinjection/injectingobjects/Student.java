@@ -5,6 +5,11 @@ public class Student {
     private MathCheat cheat;
     private String name;
 
+    public Student(MathCheat cheat, String name) {
+        this.cheat = cheat;
+        this.name = name;
+    }
+
     public void setCheat(MathCheat cheat) {
         this.cheat = cheat;
     }

@@ -8,7 +8,9 @@
     <bean id = "mathcheat" class="com.ankitverma.springpractice.dependencyinjection.injectingobjects.MathCheat"/>
 
     <bean id="student" class="com.ankitverma.springpractice.dependencyinjection.injectingobjects.Student">
-        <property name="name" value="Ankur" />
-        <property name="cheat" ref="mathcheat" />
+     <!--   <property name="name" value="Ankur" />
+        <property name="cheat" ref="mathcheat" />-->
+        <constructor-arg name="name" value="Ankit"/>
+        <constructor-arg name="cheat" ref="mathcheat"/>
     </bean>
 </beans>
