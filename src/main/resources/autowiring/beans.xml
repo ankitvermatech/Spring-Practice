@@ -10,7 +10,10 @@
 
     <context:annotation-config/>
 
-    <bean id="applicant" class="com.ankitverma.springpractice.autowiring.autowringannotation.Applicant"/>
+    <bean id="applicant1" class="com.ankitverma.springpractice.autowiring.autowringannotation.Applicant">
+        <property name="name" value="Ankit"/>
+        <property name="city" value="Ghaziabad"/>
+    </bean>
 
     <bean id="batch" class="com.ankitverma.springpractice.autowiring.autowringannotation.Batch"/>
 </beans>
