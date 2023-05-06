@@ -1,4 +1,4 @@
-package com.ankitverma.springpractice.autowiring;
+package com.ankitverma.springpractice.autowiring.xmlbased;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -13,7 +13,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class LifeSaver {
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/xmlbased/beans.xml");
         Human human = context.getBean("human", Human.class);
         human.startPumping();
     }

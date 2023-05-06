@@ -1,4 +1,4 @@
-package com.ankitverma.springpractice.autowiring;
+package com.ankitverma.springpractice.autowiring.xmlbased;
 
 public class Heart {
 
