@@ -11,7 +11,7 @@ public class Exam {
      *
      */
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("autowiring/beans.xml");
+        ApplicationContext context = new ClassPathXmlApplicationContext("firstspringcoreproject/firstcorespringmvc/beans.xml");
         Student student1 = context.getBean("student1", Student.class);
         student1.displayStudenInfo();
 
