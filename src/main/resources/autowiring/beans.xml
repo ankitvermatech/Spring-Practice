@@ -15,5 +15,15 @@
         <property name="city" value="Ghaziabad"/>
     </bean>
 
+    <bean id="applicant2" class="com.ankitverma.springpractice.autowiring.autowringannotation.Applicant">
+        <property name="name" value="Ankur"/>
+        <property name="city" value="Meerut"/>
+    </bean>
+
+    <bean id="applicant3" class="com.ankitverma.springpractice.autowiring.autowringannotation.Applicant">
+        <property name="name" value="Abhishek"/>
+        <property name="city" value="Delhi"/>
+    </bean>
+
     <bean id="batch" class="com.ankitverma.springpractice.autowiring.autowringannotation.Batch"/>
 </beans>
