@@ -9,13 +9,13 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class admin {
     public static void main(String[] args) {
-//        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
-//        CollegeClass college =  context.getBean("collegeBean", CollegeClass.class);
-//        college.display();
-//        context.close();
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(CollegeConfig.class);
+        CollegeClass college =  context.getBean("collegeBean", CollegeClass.class);
+        college.display();
+        context.close();
 
-        ApplicationContext context = new AnnotationConfigApplicationContext(BookConfig.class);
-        BookDetails book = context.getBean("bookDetails", BookDetails.class);
-        book.display();
+//        ApplicationContext context = new AnnotationConfigApplicationContext(BookConfig.class);
+//        BookDetails book = context.getBean("bookDetails", BookDetails.class);
+//        book.display();
     }
 }
