@@ -11,16 +11,16 @@ import java.awt.print.Book;
 public class BookConfig {
 
 
-//    @Bean
-//    public Principal principal(){
-//        return new Principal();
-//    }
+    @Bean
+    public Principal principal(){
+        return new Principal();
+    }
 
-//    @Bean
-//    public BookDetails bookDetails(){
-//        BookDetails bookDetails = new BookDetails();
-////        BookDetails bookDetails = new BookDetails(principal()); // Constructor Injection
-//        bookDetails.setPrincipal(principal()); // Setter Injection
-//        return bookDetails;
-//    }
+    @Bean
+    public BookDetails bookDetails(){
+        BookDetails bookDetails = new BookDetails();
+//        BookDetails bookDetails = new BookDetails(principal()); // Constructor Injection
+        bookDetails.setPrincipal(principal()); // Setter Injection
+        return bookDetails;
+    }
 }
